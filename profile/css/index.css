@@ -1,0 +1,146 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .7);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+label {
+  margin: 0;
+}
+
+
+/* header */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+nav .nav_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  transform: translate(0, -50%);
+}
+
+#logo {
+  width: 10%;
+}
+
+nav .nav_wrapper div label:nth-child(2) {
+  margin-left: 20px;
+}
+
+.eye_catching {
+  background-image: url(../img/mainvisual.jpg);
+  width: 100%;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* header end */
+
+
+/* main start */
+.info_header {
+  border-bottom: 1px solid rgba(0, 0, 0, .7);
+  padding-bottom: 3px;
+  text-align: center;
+  width: 100px;
+}
+
+
+/* about start */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_txt::before {
+  content: "";
+  background-image: url(../img/about.jpg);
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about_txt {
+  position: relative;
+  padding-left: 150px;
+  text-align: left;
+  align-items: center;
+}
+
+
+/* bicycle start */
+#bicycle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bicycle ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bicycle ul li.contents {
+  width: 32%;
+  text-align: center;
+}
+
+#bicycle ul li.contents h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#bicycle ul li.contents img {
+  width: 100%;
+}
+
+/* main end */
+
+/* footer start */
+footer {
+  text-align: center;
+}
+/* footer end */
+
+@media (max-width: 414px) {
+  #bicycle ul {
+    flex-direction: column;
+  }
+
+  #bicycle ul li.contents {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+}
